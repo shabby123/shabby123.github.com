@@ -26,6 +26,10 @@ a {
 	color: #FF7200; 
 }
 
+a img{
+	border:0;
+}
+
 a:hover {
 	color: #70B3FF; 
 }
