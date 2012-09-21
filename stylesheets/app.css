@@ -106,3 +106,10 @@ h4 {
 
 /* Fix for accordion color */
 ul.accordion > li.active { border-top: 3px solid #70B3FF; }
+
+/* Fix for app icon in accordion */
+ul.accordion > li .titleimg { float: left; margin: -5px 5px 0 0; }
+
+#smallicon {
+	height: 30px;
+}
