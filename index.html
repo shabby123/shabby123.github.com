@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html xmlns:fb="http://ogp.me/ns/fb#">
 
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
@@ -30,13 +30,23 @@
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=270442449684221";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 </head>
 <body>
 
 	<div id="wrap">
 		<div id="main">
 			<br><br>
-			
+			<div id="fb-root"></div>
+										<fb:like-box href="https://www.facebook.com/sharemylistapp" width="292" show_faces="true" stream="false" header="false"></fb:like-box>
+										
 			<!-- LOGO -->
 			<div class="row hide-for-small">
 				<div class="twelve columns">
@@ -68,6 +78,7 @@
 						<a href="http://itunes.apple.com/us/app/share-my-list/id552825268?l=sv&ls=1&mt=8" target="_new">
 							<img id="appbadge" src="images/appbadge.png" />
 						</a>
+
 						<br><br>
 	              	</div>
 	            </li>
@@ -105,6 +116,7 @@
 								<h4>Share My List is a simple, social and elegant app that lets you create, share and collaborate on lists with your friends and family.</h4>
 								<!--<h3><a id="readmore" href="#">Read more…</a></h3>-->
 								<a href="http://itunes.apple.com/us/app/share-my-list/id552825268?l=sv&ls=1&mt=8" target="_new"><img id="appbadge" src="images/appbadge.png" /></a>
+
 							</div>
 						</div>
 					</div>			
