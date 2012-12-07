@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">	
+	<head>		
+		<meta charset="utf-8">
+		<title>The list</title>
+		
+		<link rel="stylesheet" href="styles/style.css?version=2" />
+		<!--[if IE 6]>
+            <link rel="stylesheet" href="styles/ie6.css" />
+        <![endif]--> 
+        <!--[if IE 7]>
+            <link rel="stylesheet" href="styles/ie7.css" />
+        <![endif]-->
+        <!--[if IE 8]>
+            <link rel="stylesheet" href="styles/ie8.css" />
+        <![endif]-->
+       
+		<script type="text/javascript">
+			function load()
+			{
+				var vars = getUrlVars();
+
+				var el=document.getElementById('codeform');  
+				el.elements['code'].value = vars['code'];
+
+				<!--alert(el.elements['code'].value);-->
+			}
+			
+			function getUrlVars()
+			{
+			    var vars = [], hash;
+			    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+			
+			    for(var i = 0; i < hashes.length; i++)
+			    {
+			    	hash = hashes[i].split('=');
+			        vars.push(hash[0]);
+			        vars[hash[0]] = hash[1];
+			    }
+
+			    return vars;
+			}
+
+		</script>
+	</head>
+	
+	<body onload="load();">
+		<div id="wrap">
+			<div id="header">
+				<span class="text">The List password recovery</span>
+			</div><!--end header-->
+			
+			<div id="submitform">
+			<!-- http://localhost:8888 http://duochjagthelist.appspot.com -->
+				<form id="codeform" action="http://duochjagthelist.appspot.com/thelist/recoverpassword" method="post">
+					New password: <input type="password" name="password" />
+					<input type="hidden" name="code" />
+					<input type="submit" value="Save" />
+				</form>
+			</div><!--end apps-->
+			
+			<div id="footer">
+				<p class="copyright">Copyright &copy; 2012 / du och jag och pensionärerna / All Rights Reserved</p>
+			</div><!--end footer-->
+		
+		</div><!--end wrap-->
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js"></script>
+		<script src="js/jquery.custom.js"></script>
+	
+	</body>
+	
+</html>

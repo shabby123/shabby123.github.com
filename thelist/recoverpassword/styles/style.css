@@ -1,0 +1,59 @@
+/*
+Template Name: Jengo
+Description: A Business/Portfolio HTML Template
+Author: Chris Creed
+URL: http://www.chris-creed.com
+*/
+
+/* Colors: 	Orange	- #FF7200 
+			Blue2	- #70B3FF
+			Grey 	- #555
+*/
+
+@import "reset.css";
+
+/* -------------------- */
+/* -- General Styles -- */
+/* -------------------- */
+#wrap { width: 800px; margin: 0 auto 50px; }
+/* body { font: 12px/20px "Helvetica Neue", Helvetica, Arial, sans-serif; background: url(../images/main-bg.jpg) repeat-x; color: #555; font-weight: normal; } */
+body { font: 12px/20px "Helvetica Neue", Helvetica, Arial, sans-serif; color: #555; font-weight: normal; } 
+h1 { font-size: 38px; margin: 0 0 10px 0; }
+h2 { font-size: 34px; margin: 0 0 10px 0; }
+h3 { font-size: 24px; margin: 0 0 10px 0; }
+h4 { font-size: 18px; margin: 0 0 10px 0; }
+h5 { font-size: 16px; margin: 0 0 5px 0; }
+h6 { font-size: 14px; margin: 0 0 5px 0; }
+p { margin: 0 0 15px 0; }
+a { text-decoration: none; color: #70B3FF; }
+a:hover { color: #FF7200; }
+em { font-style: italic; }
+ul { margin: 0 0 15px 15px; list-style-type: circle; }
+ol { margin: 15px 0 15px 20px; list-style-type: decimal; }
+strong, b { font-weight: bold; }
+.hide { display: none; }
+
+/* ------------ */
+/* -- Header -- */
+/* ------------ */
+#header { padding: 150px 0 0 0; }
+#header .logo-img { float: left; }
+
+#text { position: relative; height: 250px;  font-size: 22px; font-weight: normal; }
+#text .normal { position: absolute; top:222px; left: 250px; }
+#text .bluetext { position: absolute; top:222px; left: 405px; color: #70B3FF; }
+
+/* ------------ */
+/* --- Submit form --- */
+/* ------------ */
+#submitform { clear: both; border-top: 2px #ddd dotted; padding: 20px 0 0 0; margin: 0 0 0 10px; }
+#submitform .app-img { float: left; margin: 0 5px 0 0; }
+#submitform .app-text { color: #555; font-size: 14px; font-weight: normal; line-height: 30px; }
+
+/* ------------ */
+/* -- Footer -- */
+/* ------------ */
+#footer { clear: both; border-top: 2px #ddd dotted; margin: 20px 0 0 10px; color: #aaa; }
+#footer .copyright { font-size: 12px; float: left; padding: 0px 0 0 0; line-height: 30px; }
+#footer .twitter { float: right; }
+#footer .mail { float: right; }
