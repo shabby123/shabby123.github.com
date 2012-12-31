@@ -1,21 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">	
-	<head>		
-		<meta charset="utf-8">
-		<title>The list</title>
-		
-		<link rel="stylesheet" href="styles/style.css?version=2" />
-		<!--[if IE 6]>
-            <link rel="stylesheet" href="styles/ie6.css" />
-        <![endif]--> 
-        <!--[if IE 7]>
-            <link rel="stylesheet" href="styles/ie7.css" />
-        <![endif]-->
-        <!--[if IE 8]>
-            <link rel="stylesheet" href="styles/ie8.css" />
-        <![endif]-->
-       
-		<script type="text/javascript">
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Share My List</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Google Web Fonts
+  ================================================== -->
+	<!--<link href='http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,700,700italic' rel='stylesheet' type='text/css'>-->
+	<link href="http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911" rel="stylesheet" type="text/css">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="../../stylesheets/base.css">
+	<link rel="stylesheet" href="../../stylesheets/skeleton.css">
+	<link rel="stylesheet" href="../../stylesheets/layout.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="../../images/favicon.ico">
+	<link rel="apple-touch-icon" href="../../images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="../../images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="../../images/apple-touch-icon-114x114.png">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js"></script>
+	<script src="js/jquery.custom.js"></script>
+	<script type="text/javascript">
 			function load()
 			{
 				var vars = getUrlVars();
@@ -41,33 +66,38 @@
 			    return vars;
 			}
 
-		</script>
-	</head>
-	
-	<body onload="load();">
-		<div id="wrap">
-			<div id="header">
-				<span class="text">The List password recovery</span>
-			</div><!--end header-->
-			
+	</script>
+</head>
+<body onload="load();">
+
+
+
+	<!-- Primary Page Layout
+	================================================== -->
+
+	<!-- Delete everything in this .container and get started on your own site! -->
+
+	<div class="container">
+		
+		<!--<hr class="twelve columns offset-by-two" />-->
+		
+		<div class="twelve columns offset-by-two">
+			<h3 style="text-align: center; font-weight:bold;">Share My List</h3>
+			<h6 style="text-align: center; font-weight:bold;">SHARE MY LIST PASSWORD RECOVERY</h6>
 			<div id="submitform">
 			<!-- http://localhost:8888 http://duochjagthelist.appspot.com -->
 				<form id="codeform" action="http://duochjagthelist.appspot.com/thelist/recoverpassword" method="post">
-					New password: <input type="password" name="password" />
+					Enter your new password: <input type="password" name="password" />
 					<input type="hidden" name="code" />
 					<input type="submit" value="Save" />
 				</form>
 			</div><!--end apps-->
-			
-			<div id="footer">
-				<p class="copyright">Copyright &copy; 2012 / du och jag och pensionärerna / All Rights Reserved</p>
-			</div><!--end footer-->
+		</div>
 		
-		</div><!--end wrap-->
-		
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js"></script>
-		<script src="js/jquery.custom.js"></script>
-	
-	</body>
-	
+	</div><!-- container -->
+
+
+<!-- End Document
+================================================== -->
+</body>
 </html>
