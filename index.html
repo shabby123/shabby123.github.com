@@ -1,36 +1,27 @@
 <!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<html lang="en">
 <head>
-
-	<!-- Basic Page Needs
-  ================================================== -->
 	<meta charset="utf-8">
 	<title>duochjagochpensionärerna</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 	<meta name="author" content="">
 
-	<!-- Mobile Specific Metas
-  ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-	<!-- Google Web Fonts
-  ================================================== -->
+<!-- Google Web Fonts
+	================================================== -->
 	<!--<link href='http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,700,700italic' rel='stylesheet' type='text/css'>-->
 	<!--<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>-->
 	<link href='http://fonts.googleapis.com/css?family=Poly:400,400italic' rel='stylesheet' type='text/css'>
 
-	<!-- CSS
-  ================================================== -->
-	<link rel="stylesheet" href="stylesheets/base.css">
-	<link rel="stylesheet" href="stylesheets/skeleton.css">
-	<link rel="stylesheet" href="stylesheets/layout.css">
+	<!-- Styles -->
+	<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+	<link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+	<link href="stylesheets/layout.css" rel="stylesheet">
 
-	<!--[if lt IE 9]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
+	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]-->
 
 	<!-- Favicons
 	================================================== -->
@@ -39,136 +30,100 @@
 	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 
-	<script type="text/javascript" src="scripts/jquery-1.8.3.min.js"></script>          
-	<script type="text/javascript">     
-		/*$(window).load(function () {
-			var currentWidth = $(window).width(); //$(document).width();
-			var allStyleSheets = $("link");
-			allStyleSheets.each(function(){ 
-			    var $this = $(this);
-			
-			    if($this.attr("href").indexOf("layoutmax767.css") > 0 ||
-			     $this.attr("href").indexOf("layoutmin480max767.css") > 0 ||
-			     $this.attr("href").indexOf("layoutmin768max959.css") > 0){
-			        $this.remove();
-			    }
-			});
-
-			if( /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent) ) {
-				$('head').append('<link href="stylesheets/layoutmax767.css" type="text/css" rel="stylesheet" />');
-				$('head').append('<meta name="viewport" content="width=300px, initial-scale=1, maximum-scale=1">');
-			}
-			else if (currentWidth > 480 && currentWidth < 767) {
-				$('head').append('<link href="stylesheets/layoutmin480max767.css" type="text/css" rel="stylesheet" />');
-			}
-			else if(currentWidth > 767 && currentWidth < 959) {
-				$('head').append('<link href="stylesheets/layoutmin768max959.css" type="text/css" rel="stylesheet" />');
-			}
-			else if (currentWidth <= 767) {			
-				$('head').append('<link href="stylesheets/layoutmax767.css" type="text/css" rel="stylesheet" />');
-			}
-		});
-                        
-		$(window).resize(function(){
-			var currentWidth = $(window).width(); //$(document).width();
-			var allStyleSheets = $("link");
-			allStyleSheets.each(function(){ 
-			    var $this = $(this);
-			
-			    if($this.attr("href").indexOf("layoutmax767.css") > 0 ||
-			     $this.attr("href").indexOf("layoutmin480max767.css") > 0 ||
-			     $this.attr("href").indexOf("layoutmin768max959.css") > 0){
-			        $this.remove();
-			    }
-			});
-
-			if (currentWidth > 480 && currentWidth < 767) {
-				$('head').append('<link href="stylesheets/layoutmin480max767.css" type="text/css" rel="stylesheet" />');
-			}
-			else if(currentWidth > 767 && currentWidth < 959) {
-				$('head').append('<link href="stylesheets/layoutmin768max959.css" type="text/css" rel="stylesheet" />');
-			}
-			else if (currentWidth <= 767) {			
-				$('head').append('<link href="stylesheets/layoutmax767.css" type="text/css" rel="stylesheet" />');
-			}
-		});*/
-	</script> 
 </head>
 <body>
 
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=270442449684221";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+	<!-- Facebook like page -->
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=270442449684221";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
 
 	<!-- Primary Page Layout
 	================================================== -->
 
 	<!-- Delete everything in this .container and get started on your own site! -->
 
-	<div class="container">
-		<div class="twelve columns offset-by-two">
-			<div class="pagetitle"><p style="color:#181818;">duochjagochpensionärerna</p></div>
-		</div>
-		
-		<div class="twelve columns offset-by-two">
-			<p class="pagemenu">
-				<a href="mailto:contact@duochjagochpensionarerna.se" title="Contact us">email</a>
-				&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
-				<a href="https://twitter.com/ochpanshisarna" target="_new" title="Link to du och jag och pensionärerna twitter account">twitter</a>
-				&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
-				<a href="http://duochjagochpensionarerna.tumblr.com" target="_new">blog</a>
-			</p>
-		</div>
-		<!--<hr class="twelve columns offset-by-two" />-->
-		
-		<div class="twelve columns offset-by-two">
-			<hr style="border-top: 1px dotted #ddd;">
-			
-			<h3 style="text-align: center;">Share My List</h3>
-			<!--<h6 style="text-align: center; font-weight:bold;">CREATE / SHARE / COMMUNICATE</h6>-->
-			<p>Share My List is a simple, social and elegant app that lets you create, share and collaborate on lists with your friends and family. </p>
-			<p><img src="images/sharemylistsmall.png" class="scale-with-grid" /> </p>
-			<p>Do you often forget what groceries to buy at the store? Do you have a hard time remembering the name of that movie your friend recommended you? Do you need to have a shared todo list with your colleagues? <br>Share My List is here to help you. Share My List focuses on being simple and elegant and doesn't try to be yet another complex Todo list with a million functions. It does what it does and it does it good.</p> 
-		</div>
-		<div class="six columns offset-by-two">
-			<p><a href="http://itunes.apple.com/us/app/share-my-list/id552825268" target="_new"><img src="images/Download_on_the_App_Store_Badge_US-UK_135x40_0824.png" class="scale-with-grid" /></a></p>
-			<ul class="square">
-				<li>Simple, elegant and intuitive user interface</li>
-				<li>Invite friends and family to share and synchronize your lists</li>
-				<li>Comment on items in lists</li>
-				<li>Synchronize a list and it is automatically saved to the cloud</li>
-				<li>Create a user account and access your lists on any iOS device</li>
-				<li>Old items are remembered and can easily be readded once deleted</li>			
-			</ul>
-		</div>
-		<div class="six columns">
-			<!--<div style="background:#f00; width:292px; height:300px;"></div>-->
-			<div style="width:292px; height:350px" class="fb-like-box" data-href="http://www.facebook.com/sharemylistapp" data-width="292" data-show-faces="true" data-stream="false" data-border-color="#ffffff" data-header="false"></div>
+	<div class="container-narrow">
+		<!-- Logo -->
+		<div class="pagetitle">
+			<p>duochjagochpensionärerna</p>
 		</div>
 
-		<div class="six columns offset-by-two">
-			<hr style="border-top: 1px dotted #ddd;">
-			<h3 style="text-align: center;">Atlas Losing Grip</h3>
-			<p>Atlas Losing Grips' official iOS application.</p>
-			<p><img src="images/atlassmall.png" class="scale-with-grid" /> </p>
-			<p>Listen to songs, read their Tumblr tour diary and Facebook status updates. Watch videos from their Youtube channel, both official music videos and live videos. Keep up to date with all things Atlas Losing Grip.</p>
-			<p><a href="https://itunes.apple.com/se/app/atlas-losing-grip/id435793054" target="_new"><img src="images/Download_on_the_App_Store_Badge_US-UK_135x40_0824.png" class="scale-with-grid" /></a></p>
+		<!-- Menu -->		
+		<div class="row-fluid">
+			<div class="span12">
+				<p class="pagemenu">
+					<a href="mailto:contact@duochjagochpensionarerna.se" title="Contact us">email</a>
+					&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="https://twitter.com/ochpanshisarna" target="_new" title="Link to du och jag och pensionärerna twitter account">twitter</a>
+					&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="http://duochjagochpensionarerna.tumblr.com" target="_new">blog</a>
+				</p>
+			</div>
 		</div>
-		
-		<div class="six columns">
-			<hr style="border-top: 1px dotted #ddd;">		
-			<h3 style="text-align: center;">Comic Reader</h3>
-			<p>Read comics on your iPhone or iPod touch.</p>
-			<p><img src="images/comicsmall.png" class="scale-with-grid" /> </p>
+
+		<!-- Share my list -->
+		<div class="row-fluid">
+			<!-- Share my list info -->
+			<div class="span12">
+				<hr>
+
+				<h3 style="text-align: center;">Share My List</h3>
+				<p>Share My List is a simple, social and elegant app that lets you create, share and collaborate on lists with your friends and family. </p>
+				<p><img src="images/sharemylistsmall.png" class="scale-with-grid" /> </p>
+				<p>Do you often forget what groceries to buy at the store? Do you have a hard time remembering the name of that movie your friend recommended you? Do you need to have a shared todo list with your colleagues? <br>Share My List is here to help you. Share My List focuses on being simple and elegant and doesn't try to be yet another complex Todo list with a million functions. It does what it does and it does it good.</p> 
+			</div>
 		</div>
-		
+		<!-- Share my list details -->
+		<div class="row-fluid">
+			<!-- Share my list info -->
+			<div class="span6">
+				<p><a href="http://itunes.apple.com/us/app/share-my-list/id552825268" target="_new"><img src="images/Download_on_the_App_Store_Badge_US-UK_135x40_0824.png" class="scale-with-grid" /></a></p>
+				<ul class="square">
+					<li>Simple, elegant and intuitive user interface</li>
+					<li>Invite friends and family to share and synchronize your lists</li>
+					<li>Comment on items in lists</li>
+					<li>Synchronize a list and it is automatically saved to the cloud</li>
+					<li>Create a user account and access your lists on any iOS device</li>
+					<li>Old items are remembered and can easily be readded once deleted</li>			
+				</ul>
+			</div>
+
+			<!-- Share my list facebook -->
+			<div class="span6">
+				<!--<div style="width:292px; height:350px" class="fb-like-box" data-href="http://www.facebook.com/sharemylistapp" data-width="292" data-show-faces="true" data-stream="false" data-border-color="#ffffff" data-header="false"></div>-->
+				<div class="fb-like-box" data-href="http://www.facebook.com/sharemylistapp" data-width="292" data-show-faces="true" data-stream="false" data-border-color="#ffffff" data-header="false"></div>
+			</div>
+		</div>
+
+		<!-- Other apps -->
+		<div class="row-fluid">
+			<!-- Atlas losing grip -->
+			<div class="span6">
+				<hr>
+				<h3 style="text-align: center;">Atlas Losing Grip</h3>
+				<p>Atlas Losing Grips' official iOS application.</p>
+				<p><img src="images/atlassmall.png" class="scale-with-grid" /> </p>
+				<p>Listen to songs, read their Tumblr tour diary and Facebook status updates. Watch videos from their Youtube channel, both official music videos and live videos. Keep up to date with all things Atlas Losing Grip.</p>
+				<p><a href="https://itunes.apple.com/se/app/atlas-losing-grip/id435793054" target="_new"><img src="images/Download_on_the_App_Store_Badge_US-UK_135x40_0824.png" class="scale-with-grid" /></a></p>
+			</div>
+
+			<!-- Comic reader -->
+			<div class="span6">
+				<hr>		
+				<h3 style="text-align: center;">Comic Reader</h3>
+				<p>Read comics on your iPhone or iPod touch.</p>
+				<p><img src="images/comicsmall.png" class="scale-with-grid" /> </p>
+			</div>
+		</div>
+
 		<footer class="twelve columns offset-by-two">
-			<hr style="border-top: 1px dotted #ddd;">
+			<hr >
 			<p class="copyright">&copy; 2012 / du och jag och pensionärerna</p>
 		</footer>
 		
@@ -176,6 +131,6 @@
 
 
 <!-- End Document
-================================================== -->
+	================================================== -->
 </body>
 </html>

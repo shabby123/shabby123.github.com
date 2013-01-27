@@ -1,28 +1,38 @@
-/*
-* Skeleton V1.2
-* Copyright 2011, Dave Gamache
-* www.getskeleton.com
-* Free to use under the MIT license.
-* http://www.opensource.org/licenses/mit-license.php
-* 6/20/2012
-*/
-
-/* Table of Content
-==================================================
-	#Site Styles
-	#Page Styles
-	#Media Queries
-	#Font-Face */
-
 /* #Site Styles
 ================================================== */
+body {
+	background: #fff;
+	font: 14px/21px "Poly", "Times New Roman", "Georgia", serif;
+	color: #444;
+}
+
+/* #Links
+================================================== */
+a, a:visited { color: #333; text-decoration: underline; outline: 0; }
+a:hover, a:focus { color: #000; }
+p a, p a:visited { line-height: inherit; }
+
+/* #Styles
+================================================== */
+.container-narrow {
+	margin: 0 auto;
+	max-width: 700px;
+}
+.container-narrow > hr {
+	margin: 30px 0;
+}
+
 .pagetitle {
+	margin: 60px auto;
+	text-align: justify;
 	word-wrap: break-word; 
 	width: 270px;
 	font-size: 80px;
-	text-align: justify;
-	margin: 30px auto;
 	line-height: 75%;
+}
+
+.pagetitle > hr {
+	margin: 30px 0;
 }
 
 .pagemenu {
@@ -59,7 +69,7 @@
 /* #Media Queries
 ================================================== */
 
-	/* Smaller than standard 960 (devices and browsers) */
+/* Smaller than standard 960 (devices and browsers) */
 	/*@media only screen and (max-width: 959px) {
 		.pagetitle {
 			width: 270px;
@@ -68,9 +78,9 @@
 			margin: 30px auto;
 			line-height: 75%;
 		}
-	}*/
+		}*/
 
-	/* Tablet Portrait size to standard 960 (devices and browsers) */
+		/* Tablet Portrait size to standard 960 (devices and browsers) */
 /*	@media only screen and (min-width: 768px) and (max-width: 959px) {
 		.pagetitle {
 			width: 270px;
@@ -80,7 +90,7 @@
 			line-height: 75%;
 		}
 	}
-*/
+	*/
 	/* All Mobile Sizes (devices and browser) */
 /*	@media only screen and (max-width: 767px) {
 		.pagetitle {
@@ -91,7 +101,7 @@
 			line-height: 75%;
 		}
 	}
-*/
+	*/
 	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 /*	@media only screen and (min-width: 480px) and (max-width: 767px) {		
 		.pagetitle {
@@ -102,7 +112,7 @@
 			line-height: 75%;
 		}
 	}
-*/
+	*/
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 /*	@media only screen and (max-width: 479px) {
 		.pagetitle {
@@ -113,7 +123,7 @@
 			line-height: 75%;
 		}
 	}
-*/
+	*/
 
 /* #Font-Face
 ================================================== */
