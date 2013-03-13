@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -90,7 +90,8 @@
 
         <div class="row">
             <div class="span12">
-                <button class="btn btn-primary" type="button">Send message to driver</button>
+                <!-- Button to trigger modal -->
+                <a href="#myModal" role="button" class="btn btn-primary" data-toggle="modal">Send message to driver</a>
                 <button class="btn" type="button">Reset counter</button>
                 <button class="btn" type="button">Start tracking</button>
             </div>
@@ -125,5 +126,20 @@
 
     </div>
     <!-- /container -->
+
+    <!-- Modal -->
+    <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h3 id="myModalLabel">Send message</h3>
+        </div>
+        <div class="modal-body">
+            <textarea class="input-block-level" style="resize: none;" rows="3"></textarea>
+        </div>
+        <div class="modal-footer">
+            <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+            <button class="btn btn-primary">Send message</button>
+        </div>
+    </div>
 </body>
 </html>
