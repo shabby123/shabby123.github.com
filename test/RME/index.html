@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>CWP Online</title>
+    <title>Fleet Management</title>
 
     <!-- Styles -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
@@ -35,7 +35,8 @@
                 <a class="brand" href="index.html">Fleet Management</a>
                 <div class="nav-collapse collapse">
                     <ul class="nav">
-                        <li class="active"><a href="index.html">Overview</a></li>
+                        <li><a href="index.html">Overview</a></li>
+                        <li class="active"><a href="index.html">Vehicle Information</a></li>
                     </ul>
                 </div>
                 <!--/.nav-collapse -->
@@ -44,55 +45,391 @@
     </div>
 
     <div class="container">
+
         <div class="row">
             <div class="span12">
-                <h3>Vehicles</h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="span3">
-                <ul class="nav nav-tabs nav-stacked">
-                    <li>
-                        <a href="details.html">
-                            <p><span class="regnbr texterror"><strong>ABP 324</strong></span> <span class="badge badge-important pull-right">!</span></p>
-                            <p>Fuel tank <span class="label pull-right">50%</span></p>
-                            <p>Color tank <span class="label label-important pull-right">34%</span></p>
-                            <p>Speed <span class="label pull-right">45 km/h</span></p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="details.html">
-                            <p><span class="regnbr"><strong>CGH 584</strong></span></p>
-                            <p>Fuel tank <span class="label pull-right">78%</span></p>
-                            <p>Color tank <span class="label pull-right">65%</span></p>
-                            <p>Speed <span class="label pull-right">52 km/h</span></p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="details.html">
-                            <p><span class="regnbr"><strong>MAC 665</strong></span></p>
-                            <p>Fuel tank <span class="label pull-right">72%</span></p>
-                            <p>Color tank <span class="label pull-right">89%</span></p>
-                            <p>Speed <span class="label pull-right">91 km/h</span></p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="details.html">
-                            <p><span class="regnbr"><strong>PRT 783</strong></span></p>
-                            <p>Fuel tank <span class="label pull-right">92%</span></p>
-                            <p>Color tank <span class="label pull-right">63%</span></p>
-                            <p>Speed <span class="label pull-right">76 km/h</span></p>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="span9">
-                <img src="img/mapwithtrucks.png" />
+                <h2>ABP 324</h2>
             </div>
         </div>
 
-        <hr>
+        <div class="row">
+            <div class="span5">
+                <img src="img/mapwithpin.png" class="img-polaroid imgwithmargin" />
+            </div>
+            <div class="span4">
+            </div>
+            <div class="span3">
+            </div>
+        </div>
+
+        <hr />
+
+            <div class="row">
+                <div class="span12">
+                    <ul class="nav nav-tabs">
+                        <li><a href="#information" data-toggle="tab">Information</a></li>
+                        <li class="active"><a href="#liveview" data-toggle="tab">Live View</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="tab-content">
+                <div class="tab-pane" id="information">
+                    <!-- Information -->
+                    <div class="row">
+                        <div class="span12">
+                            <div class="row">
+                                <div class="span4 truckinformation">
+                                    <h3>General information</h3>
+                                    <table class="table table-condensed table-striped">
+                                        <tbody>
+                                            <tr>
+                                                <td>Length</td>
+                                                <td>10.5m</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Width</td>
+                                                <td>2.55m</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Height</td>
+                                                <td>4m</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Weight:</td>
+                                                <td>32 000kg</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Melting set:</td>
+                                                <td>2x950L</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Production vessel:</td>
+                                                <td>950L</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Bead tank:</td>
+                                                <td>2x395/450L</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Material pump:</td>
+                                                <td>80L/min</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Production pump:</td>
+                                                <td>120L/min</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Crane:</td>
+                                                <td>Hiab 032-2L</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Compressor:</td>
+                                                <td>Demag CS62</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Burners:</td>
+                                                <td>Riello RG2</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Temp regulators:</td>
+                                                <td>CAL 3300</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="span4 truckinformation">
+                                    <h3>Service information</h3>
+                                    <table class="table table-condensed table-striped">
+                                        <tbody>
+                                            <tr>
+                                                <td>Registration number</td>
+                                                <td>ABP 324</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Total driving distance</td>
+                                                <td>10 532km (Jan 2013)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Tires changed</td>
+                                                <td>4 Feb 2013</td>
+                                            </tr>
+                                            <tr class="warning">
+                                                <td>Next scheduled service</td>
+                                                <td>
+                                                    <div class="btn btn-mini servicebutton">Schedule service</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Last service</td>
+                                                <td>12 Jan 2012</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Nbr of remarks last service</td>
+                                                <td>3</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="span4 truckinformation">
+                                    <div class="btn btn-success pull-right reportissuebutton">Report issue</div>
+                                    <h3>Issues</h3>
+
+                                    <ul class="nav nav-tabs nav-stacked">
+                                        <li>
+                                            <a href="#">
+                                                <i class="icon-chevron-right"></i>
+                                                No service scheduled for 2013
+                                            <p class="pull-right">15 Mar 2013</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="icon-chevron-right"></i>
+                                                Broken windshield.
+                                            <p class="pull-right">15 Mar 2013</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="icon-chevron-right"></i>
+                                                Noise coming from the right m...
+                                            <p class="pull-right">13 Mar 2012</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+
+                                    <hr />
+
+                                    <h3>Previous issues</h3>
+                                    <ul class="nav nav-tabs nav-stacked">
+                                        <li>
+                                            <a href="#">
+                                                <i class="icon-chevron-right"></i>
+                                                <span class="muted">Problem with compressor, the...</span>
+                                                <p class="muted pull-right">9 Jan 2013</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="icon-chevron-right"></i>
+                                                <span class="muted">The bead tank needs cleaning...</span>
+                                                <p class="muted pull-right">24 Dec 2012</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="icon-chevron-right"></i>
+                                                <span class="muted">The driver reported a proble...</span>
+                                                <p class="muted pull-right">14 Dec 2012</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="icon-chevron-right"></i>
+                                                <span class="muted">Leaking production vessel, w...</span>
+                                                <p class="muted pull-right">14 Dec 2012</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <div class="tab-pane active" id="liveview">
+                <!-- Live View -->
+                <div class="row">
+                    <div class="span12">
+                        <div class="row">
+                            <div class="span4 truckinformation">
+                                <h3>Current job status</h3>
+                                <table class="table table-condensed table-striped">
+                                    <tbody>
+                                        <tr>
+                                            <td>Job</td>
+                                            <td style="text-align: right;">Dalby-Staffanstorp</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Status</td>
+                                            <td style="text-align: right;">Started</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Scheduled start time</td>
+                                            <td style="text-align: right;">07:00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Actual Start time</td>
+                                            <td style="text-align: right;">07:15</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Scheduled finish time</td>
+                                            <td style="text-align: right;">13:00</td>
+                                        </tr>
+                                        <tr class="warning">
+                                            <td>Estimated finish time</td>
+                                            <td style="text-align: right;">13:17</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Current address</td>
+                                            <td style="text-align: right;">Malmövägen, Dalby</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <hr />
+                                <h4>Next job</h4>
+                                <table class="table table-condensed table-striped">
+                                    <tbody>
+                                        <tr>
+                                            <td>Next job</td>
+                                            <td style="text-align: right;">Lund-Malmö</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Scheduled start time</td>
+                                            <td style="text-align: right;">14:00</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="span4 truckinformation">
+                                <h3>Live vehicle information</h3>
+                                <table class="table table-condensed table-striped">
+                                    <tbody>
+                                        <tr class="warning">
+                                            <td>Color tank level</td>
+                                            <td>
+                                                <p class="pull-left text-warning">10%</p>
+                                                <div class="progress pull-right" style="width: 130px">
+                                                    <div class="bar bar-warning" style="width: 10%;"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Current color consumption</td>
+                                            <td style="text-align: right;">153.1 l/h</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Time until empty tank</td>
+                                            <td style="text-align: right;">35 min</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Color temperature</td>
+                                            <td style="text-align: right;">125 &deg;C</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <hr />
+
+                                <table class="table table-condensed table-striped">
+                                    <tbody>
+                                        <tr>
+                                            <td>Current speed</td>
+                                            <td style="text-align: right;">53 km/h</td>
+                                        </tr>
+                                        <tr>
+                                            <td>GPS coordinates</td>
+                                            <td style="text-align: right;"><p>Lat. 57.104426</p><p>Long. 14.941406</p></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Traffic on site</td>
+                                            <td style="text-align: right;">Light</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Weather on site</td>
+                                            <td style="text-align: right;">
+                                                25 &deg;C
+                                                <img src="img/weather.png" style="width: 40px;" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Wind on site</td>
+                                            <td style="text-align: right;">7 m/s</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="span4 truckinformation">
+                                <h3>Status messages</h3>
+                                <ul class="nav nav-tabs nav-stacked">
+                                    <li>
+                                        <a href="#">
+                                            <span class="text-warning">11:45 <span class="label label-warning">Warning</span> Color tank is running low. Won't be able to finish current job</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="text-warning">11:30 <span class="label label-warning">Warning</span> Job will not be done in time with current speed.</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="muted">08:30 Started painting.</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="muted">07:15 Leaving garage.</span>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <hr />
+
+                                <div class="btn  btn-block btn-primary">Send message to driver</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="row">
+                    <div class="span2">
+                        <p><strong>Fuel</strong></p>
+                    </div>
+                    <div class="span10">
+                        <div class="progress">
+                            <div class="bar" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="span2">
+                        <p><span class="badge badge-important">!</span> <strong>Color</strong></p>
+                    </div>
+                    <div class="span10">
+                        <div class="progress">
+                            <div class="bar bar-danger" style="width: 34%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="span2">
+                        <p><strong>Speed</strong></p>
+                    </div>
+                    <div class="span10">
+                        <p>45 km/h</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="span12">
+                        <h3>Actions</h3>
+                    </div>
+                </div>
+
+                <hr />
+
+                <div class="row">
+                    <div class="span12">
+                        <a href="#myModal" role="button" class="btn btn-primary" data-toggle="modal">Send message to driver</a>
+                        <button class="btn" type="button">Reset counter</button>
+                        <button class="btn" type="button">Start tracking</button>
+                    </div>
+                </div>
+                                        -->
+            </div>
+        </div>
     </div>
     <!-- /container -->
+
 </body>
 </html>

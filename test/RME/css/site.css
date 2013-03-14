@@ -20,9 +20,17 @@ li p {
 }
 
 .progress {
+    margin: auto 0px;
+}
+
+.servicebutton {
     margin-top: 0px;
 }
 
-.btn {
-    margin-top: 10px;
+.reportissuebutton {
+    margin-top: 15px;
+}
+
+.imgwithmargin {
+    margin-top: 15px;
 }
